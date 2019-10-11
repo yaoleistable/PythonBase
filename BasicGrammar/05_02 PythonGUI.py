@@ -1,0 +1,11 @@
+import tkinter as tk
+window = tk.Tk()
+window.title("YaoLei GUI Test")
+window.geometry('600x600')
+entry = tk.Entry(window)
+entry.pack()
+button = tk.Button(window, text='确认')
+button.pack()
+lable = tk.Label(window, text='I am YL')
+lable.pack()
+window.mainloop()

@@ -1,0 +1,15 @@
+# 04_03 CalPiV2.py
+# 蒙特卡罗方法计算圆周率
+from random import random
+from time import perf_counter
+DARTS = 1000*1000
+hits = 0.0
+start = perf_counter()
+for i in range(1, DARTS+1):
+    x, y = random(), random()
+    dist = pow(x**2 + y**2, 0.5)
+    if dist <= 1:
+        hits += 1
+end = perf_counter()-start
+pi = 4*(hits/DARTS)
+print("计算的圆周率为：{}，计算时间为：{:.5f}s".format(pi, end))
