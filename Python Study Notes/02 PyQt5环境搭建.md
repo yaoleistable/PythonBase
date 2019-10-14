@@ -10,15 +10,18 @@
     Qt Designer
     /miniconda3/envs/py36/bin/Designer.app
     $FileDir$
-### PyUIc配置：
+### PyUIC配置：
     program  自己的路径，不要选错:/Users/liuchen/PycharmProjects/spiderM/venv/bin/python
     这其实就是在命令行中运行就可以的 -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py
     $FileDir$ 固定不变
-![](_images/Qt Desigener02.png)
+
+![](_images/Desigener02.png)
 
 ## 3. Qt designer图形界面Windows配置
-
+  比较简单，百度搜索即可，可参考网址：https://www.jianshu.com/p/51b19e726f50
+  
 ## 4. Qt designer使用流程
+
   新建GUI图形界面，如下图：
 ![](_images/e7b57f9e.png)
   创建的UI文件转换成py文件

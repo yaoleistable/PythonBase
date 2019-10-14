@@ -60,12 +60,13 @@
     brew doctor: 检查有没有问题
 ## 7.Git设置	
 1. 首先在GitHub创建一个Python库，然后
-![](_images/git01.png)
 2. command+k ，提交到本地
 3. command+shift+k ，push到GitHub
 4. 选择文件夹，提交并push，就可以在GitHub网站看到了
 5. github上的版本和本地版本冲突的解决方法
-    git push -u origin master -f 
+    git push -u origin master -f
+
+![](_images/git01.png)
 
 至此，可以开心的在安装环境中进行Python学习了
 
