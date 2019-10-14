@@ -28,7 +28,7 @@ varName = tkinter.StringVar(root, value='')
 entryName = tkinter.Entry(root,
                           width=80,
                           textvariable=varName)
-entryName.place(x=10, y=30, width=80, height=20)
+entryName.place(x=100, y=5, width=80, height=20)
 
 lablePwd = tkinter.Label(root,
                          text='User Pwd:',
@@ -42,7 +42,7 @@ entryPwd = tkinter.Entry(root,
                          show='*',
                          width=80,
                          textvariable=varPwd)
-entryName.place(x=100, y=30, width=80, height=20)
+entryPwd.place(x=100, y=30, width=80, height=20)
 
 
 # 登录按钮事件处理函数
