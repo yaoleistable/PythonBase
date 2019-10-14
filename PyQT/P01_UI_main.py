@@ -6,7 +6,7 @@
 """
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from P01_UI import *
+from PyQT.P01_UI import *
 
 
 class MyWindow(QMainWindow, Ui_MainWindow):
