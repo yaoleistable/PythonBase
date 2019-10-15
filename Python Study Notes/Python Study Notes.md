@@ -200,9 +200,26 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-  
+##   2.5 Eric 安装
 
+下载地址：http://eric-ide.python-projects.org/eric-download.html
 
+Mac下安装
+
+```
+切换到下载文件目录下，执行如下命令：
+sudo python install.py
+
+(py36) yaoleideMacBook-Air:eric6-19.10 yaolei$ sudo python install.py
+Checking dependencies
+Python Version: 3.6.9
+Found PyQt5
+Found pyuic5
+PyQtChart could not be detected.
+Error: cannot import name 'QtChart'
+
+Shall 'PyQtChart' be installed using pip? (Y/n) y
+```
 
   
 
