@@ -1,10 +1,18 @@
 # 一、Python开发环境搭建
 ## 1.1 软件安装
 1. 安装3.6.5版本 或直接安装 Anaconda（建议），科学计算的各种包都包含了，方便进行虚拟环境搭建
+
 2. mac 安装 minconda3
+
 3. 安装Pycharm
+
 4. 搭建虚拟环境
+
 5. 使用conda或pip安装软件包
+
+6. 本教程使用Typora作为Markdown编辑器，设置图片保存如下：
+
+   ![1571210657525](_images/1571210657525.png)
 ## 1.2 虚拟环境的搭建
 	打开终端，conda list 查看；
 	//下面是创建python=3.6版本的环境，取名叫py36
@@ -32,6 +40,8 @@
         pip install PyQt5-tools -i http://pypi.douban.com/simple --trusted-host=pypi.douban.com
         解决。
         pip install PyQt5-tools -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host=mirrors.aliyun.com
+        安装制定版本的模块包
+        pip install SomePackage==1.0.4    # specific version
 ### 1.3.2手动安装
 
 有时候pip安装python包会失败，提示   未找到和环境相匹配的包。可以试试手动安装。
@@ -202,9 +212,11 @@ if __name__ == '__main__':
 
 ##   2.5 Eric 安装
 
-下载地址：http://eric-ide.python-projects.org/eric-download.html
+Eric是一个完整的Python编辑器和IDE，用Python编写。它是基于跨平台QT-UI工具包，集成了高度灵活的闪烁编辑器控件。它被设计成可用作为“每日”的快速和肮脏的编辑器，以及作为一个集成了许多先进特性的专业项目管理工具，Python提供专业编码器。EIC包括插件系统，它允许IDE功能的简单扩展，插件可以从网络下载。
 
-Mac下安装
+用 Eric6 与 PyQt5 结合，非常方便的实现界面与逻辑分离，满足python的极速GUI编程，不需要在界面上花很多时间。
+
+### 2.5.1Mac下安装
 
 ```
 切换到下载文件目录下，执行如下命令：
@@ -221,5 +233,320 @@ Error: cannot import name 'QtChart'
 Shall 'PyQtChart' be installed using pip? (Y/n) y
 ```
 
-  
+###   2.5.2Windows下安装Eric
+
+> 建议严格按照如下顺序安装软件，才能保证安装成功
+>
+> 如果环境已安装PyQt5、QScintilla、sip，则卸载，如pip unintall pyqt5
+>
+> **建议以下安装包都离线下载好**，采用离线方式安装，避免网速不佳造成安装失败。
+
+1. **安装Python虚拟环境**
+
+   ```
+   conda activate -n py364 python=3.6.4
+   conda activate py364  # 激活工作环境
+   ```
+
+2. **安装SIP**
+
+   SIP是安装PyQt5的前提条件，所以先安装这个
+
+   ```
+   pip install SIP
+   ```
+
+3. **安装PyQtWebEngine**
+
+   ```
+   pip install PyQtWebEngine
+   ```
+
+   如网速不佳，下载后安装，<https://pypi.org/project/PyQtWebEngine/>下载放入H:\ProgramData\Miniconda3\envs\py364\Scripts>文件夹，切换到文件夹后安装
+
+   ```
+   (py364) H:\ProgramData\Miniconda3\envs\py364\Scripts>
+   pip install PyQtWebEngine-5.13.1-5.13.1-cp35.cp36.cp37.cp38-none-win_amd64.whl
+   ```
+
+4. **安装PyQt5**
+
+   ```
+   pip install PyQt5==5.10.1 -i https://pypi.douban.com/simple
+   ```
+
+   离线下载地址：<https://pypi.org/project/PyQt5/5.10.1/#history>
+
+5. **安装QScintilla**
+
+   Eric6也需要这个，安装
+
+   ```
+   pip install QScintilla
+   ```
+
+   离线下载中地址：<https://pypi.org/project/QScintilla/#history>
+
+6. **安装PyQt5-tools**
+
+   
+
+   ```
+   pip install pyqt5-tools==5.10.1.1.3
+   
+   pip install PyQt5-tools==5.10.1.1.3 -i http://pypi.douban.com/simple --trusted-host=pypi.douban.com
+   ```
+
+   离线下载地址：<https://pypi.org/project/pyqt5-tools/#history>
+
+7. 安装PyQtChart
+
+   PyQtChart下载地址：<https://pypi.org/project/PyQtChart>
+
+   ```
+   pip install PyQtChart
+   ```
+
+   
+
+8. 安装pywin32
+
+   pywin32下载地址：<https://pypi.org/project/pywin32>
+
+   ```
+   pip install pywin32
+   ```
+
+   
+
+9. **安装Eric6**
+
+   下载Eric6，<http://eric-ide.python-projects.org/eric-download.html>，切换到目录后安装
+
+   ```
+   (py364) G:\Code\Python\eric6-18.05>python install.py
+   ```
+
+   安装以上所有后，pip list 查看版本：
+
+   ```
+   (py365) H:\>pip list
+   Package       Version
+   ------------- ----------
+   certifi       2019.9.11
+   Click         7.0
+   packaging     19.2
+   pip           19.2.3
+   pyparsing     2.4.2
+   PyQt5         5.13.0
+   PyQt5-sip     12.7.0
+   pyqt5-tools   5.13.0.1.5
+   PyQtChart     5.13.0
+   PyQtWebEngine 5.13.1
+   python-dotenv 0.10.3
+   pywin32       225
+   QScintilla    2.11.2
+   setuptools    41.4.0
+   sip           5.0.0
+   six           1.12.0
+   toml          0.10.0
+   wheel         0.33.6
+   wincertstore  0.2
+   ```
+
+   ```
+   完整的安装记录
+   G:\>conda info -e
+   # conda environments:
+   #
+   py36                     H:\ProgramData\Miniconda3\envs\py36
+   base                  *  h:\ProgramData\Miniconda3
+   py36                     h:\ProgramData\Miniconda3\envs\py36
+   py364                    h:\ProgramData\Miniconda3\envs\py364
+   py365                    h:\ProgramData\Miniconda3\envs\py365
+   
+   G:\>conda activate py365
+   
+   (py365) G:\>pip list
+   Package       Version
+   ------------- ----------
+   certifi       2019.9.11
+   Click         7.0
+   pip           19.2.3
+   PyQt5         5.13.0
+   PyQt5-sip     12.7.0
+   pyqt5-tools   5.13.0.1.5
+   python-dotenv 0.10.3
+   setuptools    41.4.0
+   wheel         0.33.6
+   wincertstore  0.2
+   
+   (py365) G:\>pip install SIP
+   
+   
+   (py365) G:\>h:
+   
+   (py365) H:\>cd H:\ProgramData\Miniconda3\envs\py365\Scripts
+   
+   (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts>pip install PyQtWebEngine-5.13.1-5.13.1-cp35.cp36.cp37.cp38-none-win_amd64.whl
+   
+   Successfully installed PyQtWebEngine-5.13.1
+   
+   (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts>pip install QScintilla-2.11.2-5.12.4-cp35.cp36.cp37.cp38-none-win_amd64.whl
+   
+   Successfully installed QScintilla-2.11.2
+   
+   (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts>cd eric6-19.10
+   
+   
+   (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts>pip install PyQtChart-5.13.0-5.13.1-cp35.cp36.cp37.cp38-none-win_amd64.whl
+   
+   
+   (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts>pip list
+   Package       Version
+   ------------- ----------
+   certifi       2019.9.11
+   Click         7.0
+   packaging     19.2
+   pip           19.2.3
+   pyparsing     2.4.2
+   PyQt5         5.13.0
+   PyQt5-sip     12.7.0
+   pyqt5-tools   5.13.0.1.5
+   PyQtChart     5.13.0
+   PyQtWebEngine 5.13.1
+   python-dotenv 0.10.3
+   QScintilla    2.11.2
+   setuptools    41.4.0
+   sip           5.0.0
+   six           1.12.0
+   toml          0.10.0
+   wheel         0.33.6
+   wincertstore  0.2
+   
+   (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts>cd eric6-19.10
+   
+   (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts\eric6-19.10>python install.py
+   Checking dependencies
+   Python Version: 3.6.5
+   Found PyQt5
+   Found pyuic5
+   Found QScintilla2
+   Found QtGui
+   Found QtNetwork
+   Found QtPrintSupport
+   Found QtSql
+   Found QtSvg
+   Found QtWidgets
+   Found QtWebEngineWidgets
+   Qt Version: 5.13.0
+   sip Version: 5.0.0
+   PyQt Version: 5.13.0
+   QScintilla Version: 2.11.2
+   All dependencies ok.
+   
+   Cleaning up old installation ...
+   
+   Creating configuration file ...
+   
+   Compiling user interface files ...
+   
+   Compiling source files ...
+   
+   Installing eric6 ...
+   Installing Python API files to 'h:\ProgramData\Miniconda3\envs\py365\Lib\site-packages\PyQt5\Qt\qsci\api\python'.
+   Installing Ruby API files to 'h:\ProgramData\Miniconda3\envs\py365\Lib\site-packages\PyQt5\Qt\qsci\api\ruby'.
+   Installing QSS API files to 'h:\ProgramData\Miniconda3\envs\py365\Lib\site-packages\PyQt5\Qt\qsci\api\qss'.
+   
+   The Python package 'pywin32' could not be imported.
+   
+   Shall 'pywin32' be installed using pip? (Y/n) y
+   Collecting pywin32
+     Downloading https://files.pythonhosted.org/packages/bb/29/2a8d06fd1e0547f129e6ed9f713027f98f2cf243aff3ece189a08b071d75/pywin32-225-cp36-cp36m-win_amd64.whl (9.1MB)
+        |████████████████████████████████| 9.1MB 26kB/s
+   Installing collected packages: pywin32
+   Successfully installed pywin32-225
+   
+   Installation complete.
+   
+   
+   Press enter to continue...
+   ```
+
+   
+
+10. **配置Eric6**
+
+    双击eric6.bat，启动Eric软件
+
+    ![1571210436205](_images/1571210436205.png)
+
+    启动界面如下：
+
+    ![1571210323466](_images/1571210323466.png)
+
+## 2.6 Eric设置
+
+### 2.6.1代码补全的设置
+
+若安装了QScintilla，Eric6就具有代码提示（Calltips）和补全（Autocompletion）功能，在设置里可以设置代码提示和补全功能，设置界面如下图。
+
+![1571210938953](_images/1571210938953.png)
+
+![1571210956576](_images/1571210956576.png)
+
+### 2.6.2 添加PyQt5-tools添加到环境变量
+
+H:\ProgramData\Miniconda3\envs\py365\Lib\site-packages\pyqt5_tools\Qt\bin
+
+![1571215152231](_images/1571215152231.png)
+
+### 2.6.3 配置PyQt5-tools路径
+
+H:\ProgramData\Miniconda3\envs\py365\Lib\site-packages\PyQt5\Qt\translations
+
+H:\ProgramData\Miniconda3\envs\py365\Lib\site-packages\pyqt5_tools\Qt\bin
+
+![1571214916888](_images/1571214916888.png)
+
+### 2.6.4 其他配置
+
+配置导入编译API：
+
+![1571212387192](_images/1571212387192.png)
+
+配置编码：
+
+![1571212552647](_images/1571212552647.png)
+
+配置工作路径：
+
+![1571212675824](_images/1571212675824.png)
+
+代码自动补全插件安装：
+
+进入插件仓库，选择安装Jedi
+
+![1571212903822](_images/1571212903822.png)
+
+![1571212818203](_images/1571212818203.png)
+
+![1571212873497](_images/1571212873497.png)
+
+Bug解决：
+
+![1571218263812](_images/1571218263812.png)
+
+然后新建工程，就可以愉快的玩耍Python了
+
+可参考文章[使用Eric新建Python GUI项目](https://blog.csdn.net/rock4you/article/details/51249033)
+
+开发流程：在Eric下双击ui文件，在Qt设计师内设计GUI界面，然后保存，接着到Eric下，将ui文件右键进行编译，最后切换到python栏下，点击运行即可看到窗口。
+1、新建工程文件
+2、新建UI窗体，选择Main Window然后生成UI，接着会自动转入Qt设计师界面
+3、然后UI右键选择Compile form，转为py文件
+4、接着切回python栏，点击Start栏选择run(或者F2)运行程序即可。
+5、ui文件右键选择调用函数(第三个，以后就不用点击)，会自动生成新得py文件，然后再最下边添加主程序后，运行即可
+
+
 

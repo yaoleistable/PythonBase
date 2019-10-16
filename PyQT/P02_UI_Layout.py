@@ -77,6 +77,9 @@ class Ui_MainWindow(object):
         self.label_13 = QtWidgets.QLabel(self.formLayoutWidget)
         self.label_13.setObjectName("label_13")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_13)
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(170, 230, 75, 23))
+        self.pushButton.setObjectName("pushButton")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 528, 23))
@@ -87,6 +90,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.pushButton.clicked.connect(self.label_13.clear)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -104,5 +108,6 @@ class Ui_MainWindow(object):
         self.label_10.setText(_translate("MainWindow", "TextLabel"))
         self.label_11.setText(_translate("MainWindow", "TextLabel"))
         self.label_12.setText(_translate("MainWindow", "TextLabel"))
-        self.label_13.setText(_translate("MainWindow", "TextLabel"))
+        self.label_13.setText(_translate("MainWindow", "你好"))
+        self.pushButton.setText(_translate("MainWindow", "PushButton"))
 
