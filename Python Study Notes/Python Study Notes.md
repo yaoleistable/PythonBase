@@ -25,7 +25,8 @@
 	source activate py36 （Mac 用此命令）
 	 conda activate py36 （Windows 用此命令）
 	退出环境
-	source deactivate
+	source deactivate （Windows 用此命令）
+	conda deactivate （Mac 用此命令）
 ![](_images/虚拟环境01.png)
 ## 1.3Python模块安装
 
@@ -218,20 +219,72 @@ Eric是一个完整的Python编辑器和IDE，用Python编写。它是基于跨�
 
 ### 2.5.1Mac下安装
 
-```
-切换到下载文件目录下，执行如下命令：
-sudo python install.py
+使用conda创建Python3.7.4版本，依次下载好安装PyQt5-5.10、QScintilla-2.10.2、eric6-19.8，进行安装。
 
-(py36) yaoleideMacBook-Air:eric6-19.10 yaolei$ sudo python install.py
+```
+conda activate pythonbase
+pip install PyQt5-5.10-5.10.0-cp35.cp36.cp37-abi3-macosx_10_6_intel.whl
+pip install QScintilla-2.10.2-5.9.3-cp35.cp36.cp37-abi3-macosx_10_6_intel.whl
+
+(pythonbase) yaoleideMacBook-Air:plugin yaolei$ cd eric6-19.8
+(pythonbase) yaoleideMacBook-Air:eric6-19.8 yaolei$ python install.py
 Checking dependencies
-Python Version: 3.6.9
+Python Version: 3.7.4
 Found PyQt5
 Found pyuic5
-PyQtChart could not be detected.
-Error: cannot import name 'QtChart'
+Found QScintilla2
+Found QtGui
+Found QtNetwork
+Found QtPrintSupport
+Found QtSql
+Found QtSvg
+Found QtWidgets
+Found QtWebEngineWidgets
+Qt Version: 5.10.0
+sip Version: 4.19.8
+PyQt Version: 5.10
+QScintilla Version: 2.10.2
+All dependencies ok.
 
-Shall 'PyQtChart' be installed using pip? (Y/n) y
+Cleaning up old installation ...
+
+Creating configuration file ...
+
+Compiling user interface files ...
+
+Compiling source files ...
+
+Installing eric6 ...
+Installing Python API files to '//miniconda3/envs/pythonbase/lib/python3.7/site-packages/PyQt5/Qt/qsci/api/python'.
+Installing Ruby API files to '//miniconda3/envs/pythonbase/lib/python3.7/site-packages/PyQt5/Qt/qsci/api/ruby'.
+Installing QSS API files to '//miniconda3/envs/pythonbase/lib/python3.7/site-packages/PyQt5/Qt/qsci/api/qss'.
+
+Installation complete.
+
+
 ```
+
+```
+安装成功后的包文件：
+(pythonbase) yaoleideMacBook-Air:eric6-19.8 yaolei$ pip list
+Package    Version  
+---------- ---------
+certifi    2019.9.11
+packaging  19.2     
+pip        19.2.3   
+pyparsing  2.4.2    
+PyQt5      5.10     
+QScintilla 2.10.2   
+setuptools 41.4.0   
+sip        4.19.8   
+six        1.12.0   
+toml       0.10.0   
+wheel      0.33.6 
+```
+
+安装成功后，在终端输入虚拟环境， eric6 启动程序
+
+参考：Eric6+PyQt5（Python3.7）最新安装教程：https://blog.csdn.net/SunStrongInChina/article/details/99319709
 
 ###   2.5.2Windows下安装Eric
 
