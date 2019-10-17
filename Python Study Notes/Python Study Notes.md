@@ -219,7 +219,9 @@ Eric是一个完整的Python编辑器和IDE，用Python编写。它是基于跨�
 
 ### 2.5.1Mac下安装
 
-使用conda创建Python3.7.4（3.5版本以上都可以）版本，依次下载好安装PyQt5-5.10、QScintilla-2.10.2、eric6-19.8，进行安装。
+使用conda创建Python3.7.4（3.5版本以上都可以）版本，依次下载好安装PyQt5-5.13.1、QScintilla-2.11.2、PyQtChart-5.13.0、PyQtWebEngine-5.13.1、eric6-19.8，进行安装。
+
+用pycharm安装Jupyter后，Designer会自动安装好。
 
 ```
 conda activate pythonbase
@@ -280,11 +282,31 @@ toml       0.10.0
 wheel      0.33.6 
 ```
 
+
+
+```
+Found QScintilla2
+Found QtGui
+Found QtNetwork
+Found QtPrintSupport
+Found QtSql
+Found QtSvg
+Found QtWidgets
+Found QtWebEngineWidgets
+Qt Version: 5.9.7
+sip Version: 4.19.8
+PyQt Version: 5.9.2
+QScintilla Version: 2.10.2
+All dependencies ok.
+```
+
 安装成功后，在终端输入虚拟环境， eric6 启动程序
 
-参考：Eric6+PyQt5（Python3.7）最新安装教程：https://blog.csdn.net/SunStrongInChina/article/details/99319709
+![image-20191017213921258](_images/image-20191017213921258.png)
 
-###   2.5.2Windows下安装Eric
+![image-20191017214247997](_images/image-20191017214247997.png)
+
+###   2.5.2 Windows下安装Eric
 
 > 建议严格按照如下顺序安装软件，才能保证安装成功
 >

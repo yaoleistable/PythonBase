@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'G:\Code\Python\PycharmProjects\PythonBase\PyQt5Projects\Hello\hello.ui'
+# Form implementation generated from reading ui file '/Users/yaolei/PycharmProjects/PythonBase/PyQt5Projects/HelloMac/helloMac.ui'
 #
-# Created by: PyQt5 UI code generator 5.10.1
+# Created by: PyQt5 UI code generator 5.13.1
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -15,26 +17,29 @@ class Ui_MainWindow(object):
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralWidget)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 0, 371, 41))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(70, 60, 74, 71))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.label = QtWidgets.QLabel(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.label.setFont(font)
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
-        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralWidget)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(10, 40, 371, 81))
-        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.label_3 = QtWidgets.QLabel(self.horizontalLayoutWidget)
-        self.label_3.setObjectName("label_3")
-        self.horizontalLayout.addWidget(self.label_3)
-        self.label_2 = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.label_2 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
-        self.horizontalLayout.addWidget(self.label_2)
+        self.verticalLayout.addWidget(self.label_2)
+        self.pushButton = QtWidgets.QPushButton(self.centralWidget)
+        self.pushButton.setGeometry(QtCore.QRect(140, 190, 121, 41))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName("pushButton")
         MainWindow.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(MainWindow)
@@ -43,9 +48,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "Hello,大家好"))
-        self.label_3.setText(_translate("MainWindow", "你好"))
-        self.label_2.setText(_translate("MainWindow", "他好"))
+        self.label.setText(_translate("MainWindow", "用户名："))
+        self.label_2.setText(_translate("MainWindow", "密码："))
+        self.pushButton.setText(_translate("MainWindow", "登  录"))
 
 
 if __name__ == "__main__":
@@ -56,4 +61,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
