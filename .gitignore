@@ -133,5 +133,3 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-!/PyQt5Projects/.eric6project/
-PyQt5Projects/P01_GUI.py
