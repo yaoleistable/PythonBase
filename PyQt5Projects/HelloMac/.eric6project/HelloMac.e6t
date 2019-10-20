@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Tasks SYSTEM "Tasks-6.0.dtd">
 <!-- eric6 tasks file for project HelloMac -->
-<!-- Saved: 2019-10-17, 22:02:15 -->
+<!-- Saved: 2019-10-20, 17:27:07 -->
 <Tasks version="6.0">
   <ProjectScanFilter></ProjectScanFilter>
-  <Task priority="1" completed="False" type="1" uid="{69b473fc-d831-47ce-a3f7-f4e140726af1}">
+  <Task priority="1" completed="False" type="1" uid="{cded8556-077e-4d93-a7ee-7783a2c26b3c}">
     <Summary>TODO: not implemented yet</Summary>
     <Description></Description>
-    <Created>2019-10-17, 22:01:42</Created>
+    <Created>2019-10-20, 17:26:43</Created>
     <Resource>
       <Filename>helloMac.py</Filename>
-      <Linenumber>33</Linenumber>
+      <Linenumber>45</Linenumber>
     </Resource>
   </Task>
 </Tasks>

@@ -3,11 +3,10 @@
 """
 Module implementing helloMac.
 """
-
+import sys
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
-from PyQt5.QtWidgets import QWidget, QApplication
-
+from PyQt5.QtWidgets import QApplication
 from Ui_helloMac import Ui_MainWindow
 
 
@@ -30,14 +29,28 @@ class helloMac(QMainWindow, Ui_MainWindow):
         """
         Slot documentation goes here.
         """
+        user_name = self.lineEdit.text()
+        password = self.lineEdit_2.text()
+        if user_name == "admin" and password == "123456":
+            print("登录成功")
+        else:
+            print("用户名密码不匹配")
+
+    
+    @pyqtSlot()
+    def on_pushButton_2_clicked(self):
+        """
+        Slot documentation goes here.
+        """
         # TODO: not implemented yet
-        self.label.setText("你好")
+        print("你好，我是退出")
+        lineEdit_text2 = self.lineEdit_2.text()
+        print(lineEdit_text2)
+        
+
 
 if __name__ == "__main__":
-    import sys
     app = QApplication(sys.argv)
-    # MainWindow = QtWidgets.QMainWindow()
     ui = helloMac()
-    # ui.setupUi(MainWindow)
     ui.show()
     sys.exit(app.exec_())

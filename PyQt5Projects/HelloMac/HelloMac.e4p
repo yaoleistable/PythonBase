@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project HelloMac -->
-<!-- Saved: 2019-10-17, 22:02:15 -->
+<!-- Saved: 2019-10-20, 16:40:24 -->
 <!-- Copyright (C) 2019 ,  -->
 <Project version="5.1">
   <Language></Language>
@@ -13,11 +13,21 @@
   <Email></Email>
   <Eol index="0"/>
   <Sources>
+    <Source>P01_TextEdit.py</Source>
+    <Source>P02_消息框.py</Source>
+    <Source>P03_关闭窗口.py</Source>
+    <Source>P04_显示提示语.py</Source>
+    <Source>P05_单项选择.py</Source>
+    <Source>P06_消息框.py</Source>
+    <Source>Ui_P01_TextEdit.py</Source>
+    <Source>Ui_P05_单项选择.py</Source>
     <Source>Ui_helloMac.py</Source>
     <Source>__init__.py</Source>
     <Source>helloMac.py</Source>
   </Sources>
   <Forms>
+    <Form>P01_TextEdit.ui</Form>
+    <Form>P05_单项选择.ui</Form>
     <Form>helloMac.ui</Form>
   </Forms>
   <Vcs>
