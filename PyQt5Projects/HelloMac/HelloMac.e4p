@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project HelloMac -->
-<!-- Saved: 2019-10-20, 16:40:24 -->
+<!-- Saved: 2019-10-21, 21:50:41 -->
 <!-- Copyright (C) 2019 ,  -->
 <Project version="5.1">
   <Language></Language>
@@ -19,8 +19,12 @@
     <Source>P04_显示提示语.py</Source>
     <Source>P05_单项选择.py</Source>
     <Source>P06_消息框.py</Source>
+    <Source>P06_消息框Learn.py</Source>
+    <Source>P07_滚轮.py</Source>
     <Source>Ui_P01_TextEdit.py</Source>
     <Source>Ui_P05_单项选择.py</Source>
+    <Source>Ui_P06_消息框Learn.py</Source>
+    <Source>Ui_P07_滚轮.py</Source>
     <Source>Ui_helloMac.py</Source>
     <Source>__init__.py</Source>
     <Source>helloMac.py</Source>
@@ -28,6 +32,8 @@
   <Forms>
     <Form>P01_TextEdit.ui</Form>
     <Form>P05_单项选择.ui</Form>
+    <Form>P06_消息框Learn.ui</Form>
+    <Form>P07_滚轮.ui</Form>
     <Form>helloMac.ui</Form>
   </Forms>
   <Vcs>
@@ -54,4 +60,131 @@
     <FiletypeAssociation pattern="README.*" type="OTHERS"/>
     <FiletypeAssociation pattern="makefile" type="OTHERS"/>
   </FiletypeAssociations>
+  <Checkers>
+    <CheckersParams>
+      <dict>
+        <key>
+          <string>PYLINT</string>
+        </key>
+        <value>
+          <dict>
+            <key>
+              <string>dialogReport</string>
+            </key>
+            <value>
+              <bool>False</bool>
+            </value>
+            <key>
+              <string>disabledMessages</string>
+            </key>
+            <value>
+              <string></string>
+            </value>
+            <key>
+              <string>enableBasic</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableClasses</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableDesign</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableExceptions</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableFormat</string>
+            </key>
+            <value>
+              <bool>False</bool>
+            </value>
+            <key>
+              <string>enableImports</string>
+            </key>
+            <value>
+              <bool>False</bool>
+            </value>
+            <key>
+              <string>enableLogging</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableMetrics</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableMiscellaneous</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableNewstyle</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableSimilarities</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableStringFormat</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableTypecheck</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enableVariables</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>enabledMessages</string>
+            </key>
+            <value>
+              <string></string>
+            </value>
+            <key>
+              <string>htmlReport</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>txtReport</string>
+            </key>
+            <value>
+              <bool>False</bool>
+            </value>
+          </dict>
+        </value>
+      </dict>
+    </CheckersParams>
+  </Checkers>
 </Project>

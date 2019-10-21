@@ -133,3 +133,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+!/Tools/.vscode/
+.DS_Store
+PyQt5Projects/.DS_Store
+Python Study Notes/.DS_Store
+Python Study Notes/_images/.DS_Store
+Tools for Efficient Office/.DS_Store

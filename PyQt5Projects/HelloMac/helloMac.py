@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""
-Module implementing helloMac.
-"""
+"""Module implementing helloMac."""
 import sys
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
@@ -11,10 +9,13 @@ from Ui_helloMac import Ui_MainWindow
 
 
 class helloMac(QMainWindow, Ui_MainWindow):
+
     """
     Class documentation goes here.
+
     """
     def __init__(self, parent=None):
+
         """
         Constructor
         
