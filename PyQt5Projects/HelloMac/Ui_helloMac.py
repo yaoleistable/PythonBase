@@ -1,78 +1,58 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/Users/yaolei/PycharmProjects/PythonBase/PyQt5Projects/HelloMac/helloMac.ui'
+# Form implementation generated from reading ui file 'G:\Code\Python\PycharmProjects\PythonBase\PyQt5Projects\HelloMac\helloMac.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.1
+# Created by: PyQt5 UI code generator 5.10.1
 #
 # WARNING! All changes made in this file will be lost!
 
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
+        MainWindow.setEnabled(True)
         MainWindow.resize(400, 300)
+        MainWindow.setMouseTracking(False)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../PyQT/Lei.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("Lei.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
+        MainWindow.setToolButtonStyle(QtCore.Qt.ToolButtonIconOnly)
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralWidget)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(70, 60, 74, 71))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(70, 60, 98, 71))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.label_1 = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.label = QtWidgets.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setPointSize(18)
-        self.label_1.setFont(font)
-        self.label_1.setObjectName("label_1")
-        self.verticalLayout.addWidget(self.label_1)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.verticalLayout.addWidget(self.label)
         self.label_2 = QtWidgets.QLabel(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setPointSize(18)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.verticalLayout.addWidget(self.label_2)
-        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralWidget)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(110, 150, 181, 31))
-        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.radioButton_1 = QtWidgets.QRadioButton(self.horizontalLayoutWidget)
-        self.radioButton_1.setObjectName("radioButton_1")
-        self.horizontalLayout.addWidget(self.radioButton_1)
-        self.radioButton_2 = QtWidgets.QRadioButton(self.horizontalLayoutWidget)
-        self.radioButton_2.setObjectName("radioButton_2")
-        self.horizontalLayout.addWidget(self.radioButton_2)
-        self.verticalLayoutWidget_2 = QtWidgets.QWidget(self.centralWidget)
-        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(150, 60, 141, 71))
-        self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.lineEdit = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
-        self.lineEdit.setObjectName("lineEdit")
-        self.verticalLayout_2.addWidget(self.lineEdit)
-        self.lineEdit_2 = QtWidgets.QLineEdit(self.verticalLayoutWidget_2)
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.verticalLayout_2.addWidget(self.lineEdit_2)
-        self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.centralWidget)
-        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(100, 200, 191, 41))
-        self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
-        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.pushButton = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
+        self.pushButton = QtWidgets.QPushButton(self.centralWidget)
+        self.pushButton.setGeometry(QtCore.QRect(140, 190, 121, 41))
+        font = QtGui.QFont()
+        font.setPointSize(18)
+        self.pushButton.setFont(font)
         self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout_2.addWidget(self.pushButton)
-        self.pushButton_2 = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout_2.addWidget(self.pushButton_2)
+        self.radioButton = QtWidgets.QRadioButton(self.centralWidget)
+        self.radioButton.setGeometry(QtCore.QRect(70, 160, 87, 16))
+        self.radioButton.setWhatsThis("")
+        self.radioButton.setChecked(False)
+        self.radioButton.setObjectName("radioButton")
+        self.radioButton_2 = QtWidgets.QRadioButton(self.centralWidget)
+        self.radioButton_2.setGeometry(QtCore.QRect(190, 160, 89, 16))
+        self.radioButton_2.setChecked(True)
+        self.radioButton_2.setObjectName("radioButton_2")
         MainWindow.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(MainWindow)
@@ -80,14 +60,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_1.setText(_translate("MainWindow", "用户名："))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Hello Mac"))
+        self.label.setText(_translate("MainWindow", "用户名："))
         self.label_2.setText(_translate("MainWindow", "密码："))
-        self.radioButton_1.setText(_translate("MainWindow", "同意"))
+        self.pushButton.setText(_translate("MainWindow", "登  录"))
+        self.radioButton.setText(_translate("MainWindow", "同意"))
         self.radioButton_2.setText(_translate("MainWindow", "不同意"))
-        self.lineEdit.setText(_translate("MainWindow", "请输入用户名"))
-        self.pushButton.setText(_translate("MainWindow", "登录"))
-        self.pushButton_2.setText(_translate("MainWindow", "退出"))
 
 
 if __name__ == "__main__":
@@ -98,3 +76,4 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
