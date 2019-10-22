@@ -2,9 +2,6 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
-  <property name="enabled">
-   <bool>true</bool>
-  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,18 +10,8 @@
     <height>300</height>
    </rect>
   </property>
-  <property name="mouseTracking">
-   <bool>false</bool>
-  </property>
   <property name="windowTitle">
-   <string>Hello Mac</string>
-  </property>
-  <property name="windowIcon">
-   <iconset>
-    <normaloff>Lei.ico</normaloff>Lei.ico</iconset>
-  </property>
-  <property name="toolButtonStyle">
-   <enum>Qt::ToolButtonIconOnly</enum>
+   <string>MainWindow</string>
   </property>
   <property name="windowIcon">
    <iconset>
@@ -36,7 +23,7 @@
      <rect>
       <x>70</x>
       <y>60</y>
-      <width>98</width>
+      <width>74</width>
       <height>71</height>
      </rect>
     </property>
@@ -140,41 +127,6 @@
       </widget>
      </item>
     </layout>
-   </widget>
-   <widget class="QRadioButton" name="radioButton">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>160</y>
-      <width>87</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="whatsThis">
-     <string extracomment="你好"/>
-    </property>
-    <property name="text">
-     <string>同意</string>
-    </property>
-    <property name="checked">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_2">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>160</y>
-      <width>89</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>不同意</string>
-    </property>
-    <property name="checked">
-     <bool>true</bool>
-    </property>
    </widget>
   </widget>
  </widget>

@@ -314,7 +314,152 @@ All dependencies ok.
 >
 > **建议以下安装包都离线下载好**，采用离线方式安装，避免网速不佳造成安装失败。
 >
+> **安装版本一：**
+>
 > **版本选择：Python3.6及以上、PyQt5==5.10.1 、pyqt5-tools==5.10.1.1.3、eric6-17.03.1中文版**（经测试，这个版本比较稳定，其他高版本会出现各种对应包不全引起的问题）
+>
+> **安装版本二：**
+>
+> 版本选择：Python3.7.4、jupyter-1.0.0、PyQt5-5.13.0、pyqt5-tools-5.13.0.1.5、PyQtWebEngine-5.13.1、QScintilla-2.11.2、sip-5.0.0、PyQtChart-5.13.0、**eric6-19.10**（经多次琢磨，可顺利安装最新版本）
+
+
+
+
+
+```
+conda create -n py37 python=3.7.4
+conda activate py37
+pip install jupyter -i https://pypi.douban.com/simple
+
+pip install PyQt5-tools -i http://pypi.douban.com/simple --trusted-host=pypi.douban.com  (PyQt5-tools-5.13.0.1.5)
+
+# pip install PyQt5 -i https://pypi.douban.com/simple   (PyQt5-5.13.0) PyQt5-tools会安装
+
+pip install PyQtChart -i https://pypi.douban.com/simple  （PyQtChart-5.13.0）
+pip install QScintilla -i https://pypi.douban.com/simple
+pip install SIP -i https://pypi.douban.com/simple
+pip install PyQtWebEngine -i https://pypi.douban.com/simple
+
+pip install pywin32 -i https://pypi.douban.com/simple
+
+Microsoft Windows [版本 10.0.18362.239]
+(c) 2019 Microsoft Corporation。保留所有权利。
+
+C:\Windows\system32>conda activate py37
+
+(py37) C:\Windows\system32>pip install jupyter -i https://pypi.douban.com/simple
+
+(py37) C:\Windows\system32>g:
+
+(py37) G:\>cd G:\Code\Python\01 安装源文件\Python模块
+
+(py37) G:\Code\Python\01 安装源文件\Python模块>pip install PyQt5 -i https://pypi.douban.com/simple
+
+(py37) G:\Code\Python\01 安装源文件\Python模块>h:
+
+(py37) H:\>pip install PyQt5-tools -i http://pypi.douban.com/simple --trusted-host=pypi.douban.com
+Looking in indexes: http://pypi.douban.com/simple
+
+
+(py37) H:\>pip install QScintilla -i https://pypi.douban.com/simple
+
+(py37) H:\>pip install SIP -i https://pypi.douban.com/simple
+
+(py37) H:\>pip install PyQtWebEngine -i https://pypi.douban.com/simple
+
+(py37) H:\>pip list
+Package            Version
+------------------ ----------
+attrs              19.3.0
+backcall           0.1.0
+bleach             3.1.0
+certifi            2019.9.11
+Click              7.0
+colorama           0.4.1
+decorator          4.4.0
+defusedxml         0.6.0
+entrypoints        0.3
+importlib-metadata 0.23
+ipykernel          5.1.3
+ipython            7.8.0
+ipython-genutils   0.2.0
+ipywidgets         7.5.1
+jedi               0.15.1
+Jinja2             2.10.3
+jsonschema         3.1.1
+jupyter            1.0.0
+jupyter-client     5.3.4
+jupyter-console    6.0.0
+jupyter-core       4.6.0
+MarkupSafe         1.1.1
+mistune            0.8.4
+more-itertools     7.2.0
+nbconvert          5.6.0
+nbformat           4.4.0
+notebook           6.0.1
+packaging          19.2
+pandocfilters      1.4.2
+parso              0.5.1
+pickleshare        0.7.5
+pip                19.2.3
+prometheus-client  0.7.1
+prompt-toolkit     2.0.10
+Pygments           2.4.2
+pyparsing          2.4.2
+PyQt5              5.13.0
+PyQt5-sip          12.7.0
+pyqt5-tools        5.13.0.1.5
+PyQtWebEngine      5.13.1
+pyrsistent         0.15.4
+python-dateutil    2.8.0
+python-dotenv      0.10.3
+pywin32            225
+pywinpty           0.5.5
+pyzmq              18.1.0
+QScintilla         2.11.2
+qtconsole          4.5.5
+Send2Trash         1.5.0
+setuptools         41.4.0
+sip                5.0.0
+six                1.12.0
+terminado          0.8.2
+testpath           0.4.2
+toml               0.10.0
+tornado            6.0.3
+traitlets          4.3.3
+wcwidth            0.1.7
+webencodings       0.5.1
+wheel              0.33.6
+widgetsnbextension 3.5.1
+wincertstore       0.2
+zipp               0.6.0
+
+(py37) H:\>pip install PyQtChart -i https://pypi.douban.com/simple
+
+
+(py37) H:\>cd H:\ProgramData\Miniconda3\envs\py37\Scripts\eric6-19.10
+
+(py37) H:\ProgramData\Miniconda3\envs\py37\Scripts\eric6-19.10>python install.py
+Checking dependencies
+Python Version: 3.7.4
+Found PyQt5
+Found pyuic5
+Found QScintilla2
+Found QtGui
+Found QtNetwork
+Found QtPrintSupport
+Found QtSql
+Found QtSvg
+Found QtWidgets
+Found QtWebEngineWidgets
+Qt Version: 5.13.0
+sip Version: 5.0.0
+PyQt Version: 5.13.0
+QScintilla Version: 2.11.2
+All dependencies ok.
+```
+
+
 
 ```
 (py365) H:\ProgramData\Miniconda3\envs\py365\Scripts\eric6-17.03.1>python install.py
