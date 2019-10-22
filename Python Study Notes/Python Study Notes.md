@@ -508,6 +508,8 @@ H:\ProgramData\Miniconda3\envs\py365\Lib\site-packages\pyqt5_tools\Qt\bin
 
 ![1571212873497](_images/1571212873497.png)
 
+![image-20191020200258167](_images/image-20191020200258167.png)
+
 然后新建工程，就可以愉快的玩耍Python了
 
 可参考文章[使用Eric新建Python GUI项目](https://blog.csdn.net/rock4you/article/details/51249033)

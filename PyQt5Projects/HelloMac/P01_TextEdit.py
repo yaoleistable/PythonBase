@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""
-Module implementing MainWindow.
-"""
+"""Module implementing MainWindow."""
 import sys
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
@@ -12,16 +10,18 @@ from Ui_P01_TextEdit import Ui_MainWindow
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
+
     """
     Class documentation goes here.
     """
 
     def __init__(self, parent=None):
         """
-        Constructor
-        
+        Constructor.
+
         @param parent reference to the parent widget
         @type QWidget
+
         """
         super(MainWindow, self).__init__(parent)
         self.setupUi(self)
@@ -41,7 +41,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # self.textEdit.setHtml(input_text)  # 显示Html，如 <font color='red' size='20'>HELLO!</font>
         a = self.textEdit.toPlainText()
         print(a)
-
 
     @pyqtSlot()
     def on_pushButton_clicked(self):
