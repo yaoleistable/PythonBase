@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="pic">
+        <file>img/help_24px_1236243_easyicon.net.ico</file>
+        <file>img/help_64px_1236243_easyicon.net.ico</file>
+        <file>img/help_128px_1236243_easyicon.net.ico</file>
+        <file>img/Lei.ico</file>
+        <file>img/pig_32px.ico</file>
+    </qresource>
+</RCC>

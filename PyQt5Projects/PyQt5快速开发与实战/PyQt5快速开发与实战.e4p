@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
-<!-- eric project file for project HelloMac -->
-<!-- Saved: 2019-10-17, 21:44:42 -->
+<!-- eric project file for project PyQt5快速开发与实战 -->
+<!-- Saved: 2019-10-27, 21:55:55 -->
 <!-- Copyright (C) 2019 ,  -->
 <Project version="5.1">
-  <Language>en_US</Language>
-  <Hash>37ad62a76e72ec8efcc54ca39d0fc3f4ccfbee7c</Hash>
+  <Language></Language>
+  <Hash>53823c249fa995cbbb959f8d6a436272166c7162</Hash>
   <ProgLanguage mixed="0">Python3</ProgLanguage>
   <ProjectType>PyQt5</ProjectType>
   <Version>0.1</Version>
   <Author></Author>
   <Email></Email>
   <Eol index="0"/>
-  <Others>
-    <Other>存放Eric6创建的GUI工程.txt</Other>
-  </Others>
+  <Sources>
+    <Source>01_Layouts.py</Source>
+    <Source>02_基本窗口控件.py</Source>
+    <Source>03.py</Source>
+    <Source>Ui_01_Layouts.py</Source>
+    <Source>Ui_02_基本窗口控件.py</Source>
+    <Source>__init__.py</Source>
+    <Source>apprcc_rc.py</Source>
+  </Sources>
+  <Forms>
+    <Form>01_Layouts.ui</Form>
+    <Form>02_基本窗口控件.ui</Form>
+  </Forms>
+  <Resources>
+    <Resource>apprcc.qrc</Resource>
+  </Resources>
   <Vcs>
     <VcsType>None</VcsType>
   </Vcs>

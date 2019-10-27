@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/Users/yaolei/PycharmProjects/PythonBase/PyQt5Projects/Chapter02/Chapter02_Layouts.ui'
+# Form implementation generated from reading ui file '/Users/yaolei/PycharmProjects/PythonBase/PyQt5Projects/PyQt5快速开发与实战/01_Layouts.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.1
 #
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
         self.layoutWidget = QtWidgets.QWidget(self.centralWidget)
-        self.layoutWidget.setGeometry(QtCore.QRect(50, 70, 402, 216))
+        self.layoutWidget.setGeometry(QtCore.QRect(50, 70, 402, 248))
         self.layoutWidget.setObjectName("layoutWidget")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.layoutWidget)
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
@@ -104,6 +104,12 @@ class Ui_MainWindow(object):
         self.label_8.setObjectName("label_8")
         self.horizontalLayout.addWidget(self.label_8)
         self.verticalLayout_2.addLayout(self.horizontalLayout)
+        self.label_11 = QtWidgets.QLabel(self.centralWidget)
+        self.label_11.setGeometry(QtCore.QRect(370, 0, 81, 51))
+        self.label_11.setText("")
+        self.label_11.setPixmap(QtGui.QPixmap(":/pic/img/help_64px_1236243_easyicon.net.ico"))
+        self.label_11.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_11.setObjectName("label_11")
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
         self.menuBar.setGeometry(QtCore.QRect(0, 0, 500, 22))
@@ -113,10 +119,6 @@ class Ui_MainWindow(object):
         self.menu = QtWidgets.QMenu(self.menuBar)
         self.menu.setObjectName("menu")
         MainWindow.setMenuBar(self.menuBar)
-        self.toolBar = QtWidgets.QToolBar(MainWindow)
-        self.toolBar.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.toolBar.setObjectName("toolBar")
-        MainWindow.addToolBar(QtCore.Qt.TopToolBarArea, self.toolBar)
         self.actionNew = QtWidgets.QAction(MainWindow)
         self.actionNew.setObjectName("actionNew")
         self.actionOpen = QtWidgets.QAction(MainWindow)
@@ -139,7 +141,6 @@ class Ui_MainWindow(object):
         self.menu.addAction(self.actionPaste)
         self.menuBar.addAction(self.menu_F.menuAction())
         self.menuBar.addAction(self.menu.menuAction())
-        self.toolBar.addAction(self.actionWinAction)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -165,7 +166,6 @@ class Ui_MainWindow(object):
         self.label_8.setText(_translate("MainWindow", "水平布局"))
         self.menu_F.setTitle(_translate("MainWindow", "文件(&F)"))
         self.menu.setTitle(_translate("MainWindow", "编辑"))
-        self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar"))
         self.actionNew.setText(_translate("MainWindow", "新建"))
         self.actionNew.setToolTip(_translate("MainWindow", "新建"))
         self.actionNew.setShortcut(_translate("MainWindow", "Ctrl+N"))
@@ -182,6 +182,9 @@ class Ui_MainWindow(object):
         self.actionWinAction.setText(_translate("MainWindow", "添加窗体"))
         self.actionWinAction.setToolTip(_translate("MainWindow", "添加窗体"))
 
+
+import apprcc_rc
+import rcc_rc
 
 if __name__ == "__main__":
     import sys

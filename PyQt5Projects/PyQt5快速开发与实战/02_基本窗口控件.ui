@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>600</width>
+                <height>400</height>
+            </rect>
+        </property>
+        <property name="mouseTracking">
+            <bool>false</bool>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <property name="windowIcon">
+            <iconset resource="apprcc.qrc">
+                <normaloff>:/pic/img/Lei.ico</normaloff>:/pic/img/Lei.ico
+            </iconset>
+        </property>
+        <widget class="QWidget" name="centralWidget">
+            <widget class="QLabel" name="label">
+                <property name="geometry">
+                    <rect>
+                        <x>530</x>
+                        <y>300</y>
+                        <width>61</width>
+                        <height>71</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string/>
+                </property>
+                <property name="pixmap">
+                    <pixmap resource="apprcc.qrc">:/pic/img/help_64px_1236243_easyicon.net.ico</pixmap>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="btn_close">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>10</y>
+                        <width>113</width>
+                        <height>32</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>关闭窗口</string>
+                </property>
+            </widget>
+            <widget class="QPushButton" name="btn_QWidget">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>40</y>
+                        <width>121</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>QWidget学习</string>
+                </property>
+            </widget>
+            <widget class="QTextEdit" name="textEdit">
+                <property name="geometry">
+                    <rect>
+                        <x>330</x>
+                        <y>40</y>
+                        <width>251</width>
+                        <height>151</height>
+                    </rect>
+                </property>
+                <property name="toolTip">
+                    <string>我是多行文本框</string>
+                </property>
+            </widget>
+            <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                    <rect>
+                        <x>330</x>
+                        <y>10</y>
+                        <width>60</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>输出结果：</string>
+                </property>
+            </widget>
+            <widget class="QWidget" name="">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>70</y>
+                        <width>221</width>
+                        <height>32</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                        <widget class="QPushButton" name="btn_QLable">
+                            <property name="toolTip">
+                                <string>这是个按钮</string>
+                            </property>
+                            <property name="text">
+                                <string>QLable学习</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLabel" name="label_learn">
+                            <property name="statusTip">
+                                <string>QLable学习</string>
+                            </property>
+                            <property name="text">
+                                <string>TextLabel</string>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QWidget" name="">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>110</y>
+                        <width>267</width>
+                        <height>33</height>
+                    </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                        <widget class="QPushButton" name="btn_QLineEdit">
+                            <property name="text">
+                                <string>QLineEdit学习</string>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <widget class="QLineEdit" name="lineEdit">
+                            <property name="toolTip">
+                                <string>我是单行文本框</string>
+                            </property>
+                            <property name="text">
+                                <string>我是单行文本框</string>
+                            </property>
+                            <property name="echoMode">
+                                <enum>QLineEdit::Normal</enum>
+                            </property>
+                            <property name="clearButtonEnabled">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                    </item>
+                </layout>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusBar">
+            <property name="mouseTracking">
+                <bool>true</bool>
+            </property>
+            <property name="statusTip">
+                <string>状态栏</string>
+            </property>
+        </widget>
+    </widget>
+    <resources>
+        <include location="apprcc.qrc"/>
+    </resources>
+    <connections/>
+</ui>
