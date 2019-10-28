@@ -4,8 +4,8 @@
 Module implementing MainWindow.
 """
 
-from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtGui import QIcon, QIntValidator, QDoubleValidator, QRegExpValidator
+from PyQt5.QtCore import pyqtSlot, QRegExp
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtWidgets import QApplication, QDesktopWidget
 
@@ -37,6 +37,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.btn_QWidget.clicked.connect(self.btn_QWidget_Clicked)
         self.btn_QLable.clicked.connect(self.btn_QLable_Clicked)
         self.btn_QLineEdit.clicked.connect(self.btn_QLineEdit_Clicked)
+        self.btn_Clear.clicked.connect(self.btn_Clear_Clicked)
 
     def print_Message(self, message):
         """
@@ -95,6 +96,32 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.print_Message(self.lineEdit.text())
         QApplication.processEvents()  # 刷新页面
 
+        # P148页内容
+        self.pIntLineEdit.setPlaceholderText("整型")  # 设置单行文本框提示信息
+        pQIntValidator = QIntValidator(self)
+        pQIntValidator.setRange(1, 99)  # 整型范围，1~99
+        self.pIntLineEdit.setValidator(pQIntValidator)
+
+        self.pDoubleLineEdit.setPlaceholderText("浮点型")
+        pDoubleValidator = QDoubleValidator(self)
+        pDoubleValidator.setRange(-360, 360)  # 浮点型范围-360~360
+        pDoubleValidator.setNotation(QDoubleValidator.StandardNotation)
+        pDoubleValidator.setDecimals(2)  # 小数点后2位
+        self.pDoubleLineEdit.setValidator(pDoubleValidator)
+
+        self.pValidatorLineEdit.setPlaceholderText("字母和数字")
+        reg = QRegExp("[a-zA-Z0-9]+$")
+        pValidator = QRegExpValidator(self)
+        pValidator.setRegExp(reg)
+        self.pValidatorLineEdit.setValidator(pValidator)
+
+    def btn_Clear_Clicked(self):
+        self.lineEdit.clear()  # 清空方法
+        self.textEdit.clear()
+
+    """
+    学习到P154页，关于按钮类控件
+    """
 
 if __name__ == "__main__":
     import sys

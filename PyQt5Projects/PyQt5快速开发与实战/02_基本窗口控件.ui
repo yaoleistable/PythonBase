@@ -90,7 +90,7 @@
                     <string>输出结果：</string>
                 </property>
             </widget>
-            <widget class="QWidget" name="">
+            <widget class="QWidget" name="layoutWidget">
                 <property name="geometry">
                     <rect>
                         <x>30</x>
@@ -121,6 +121,85 @@
                         </widget>
                     </item>
                 </layout>
+            </widget>
+            <widget class="QGroupBox" name="groupBox">
+                <property name="geometry">
+                    <rect>
+                        <x>30</x>
+                        <y>150</y>
+                        <width>211</width>
+                        <height>131</height>
+                    </rect>
+                </property>
+                <property name="title">
+                    <string>QLineEdit</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>30</y>
+                            <width>191</width>
+                            <height>91</height>
+                        </rect>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout">
+                        <item row="0" column="0">
+                            <widget class="QLabel" name="label_3">
+                                <property name="text">
+                                    <string>整型</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="0" column="1">
+                            <widget class="QLineEdit" name="pIntLineEdit">
+                                <property name="inputMethodHints">
+                                    <set>Qt::ImhNone</set>
+                                </property>
+                                <property name="placeholderText">
+                                    <string>int</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="1" column="0">
+                            <widget class="QLabel" name="label_4">
+                                <property name="text">
+                                    <string>浮点型</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="1" column="1">
+                            <widget class="QLineEdit" name="pDoubleLineEdit">
+                                <property name="placeholderText">
+                                    <string>float</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="2" column="0">
+                            <widget class="QLabel" name="label_5">
+                                <property name="text">
+                                    <string>字母和数字</string>
+                                </property>
+                            </widget>
+                        </item>
+                        <item row="2" column="1">
+                            <widget class="QLineEdit" name="pValidatorLineEdit"/>
+                        </item>
+                    </layout>
+                </widget>
+            </widget>
+            <widget class="QPushButton" name="btn_Clear">
+                <property name="geometry">
+                    <rect>
+                        <x>150</x>
+                        <y>10</y>
+                        <width>113</width>
+                        <height>32</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>清空</string>
+                </property>
             </widget>
             <widget class="QWidget" name="">
                 <property name="geometry">
